@@ -18,7 +18,7 @@ except ImportError:
 
 
 class HtmlFrame(ttk.Frame):
-    def __init__(self, master, messages_enabled=True, vertical_scrollbar="auto", horizontal_scrollbar=False, **kw):
+    def __init__(self, master, messages_enabled=False, vertical_scrollbar="auto", horizontal_scrollbar=False, **kw):
         ttk.Frame.__init__(self, master, **kw)
 
         if messages_enabled:
